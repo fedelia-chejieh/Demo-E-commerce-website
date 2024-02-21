@@ -13,7 +13,7 @@ div {
 }
 
 nav {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/112/original/image_background.jpg?1704306522);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/173/original/image_background.jpeg?1708520924);
   color: white;
   padding: 25px 50px;
   margin: 30;
@@ -35,25 +35,16 @@ nav {
 
 .navItems {
   position: relative;
-  left: 60px;
+  left: 100px;
   font-size: 14px;
   cursor: pointer;
 }
 
-.searchInput {
-  border: none;
-  background-color: transparent;
-  outline-color: #ffad8f;
+.navItemIcon {
+  height: 70;
+  width: 150;
 }
 
-.searchInput::placeholder {
-  color: lightgray;
-}
-
-.searchIcon {
-  margin: 5px;
-  cursor: pointer;
-}
 
 .contact {
   margin: 9px;
@@ -74,9 +65,9 @@ nav {
 
 .menu-items li {
   position: relative;
-  right: 50px;
+  right: 155px;
   display: inline;
-  margin: 0 25px;
+  margin: 0 10px;
   font-weight: 400;
   font-size: larger;
   color: white;
