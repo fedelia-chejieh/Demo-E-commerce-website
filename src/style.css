@@ -13,7 +13,7 @@ div {
 }
 
 nav {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/173/original/image_background.jpeg?1708520924);
+  background: rgba(163, 137, 137, 0.5);
   color: white;
   padding: 25px 50px;
   margin: 30;
@@ -68,6 +68,15 @@ nav {
   cursor: pointer;
 }
 
+.site-header {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/112/original/image_background.jpg?1704306522);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92vh;
+}
+
 /* Container holding the image and the text */
 .container:not(.top-left) {
   position: relative;
@@ -75,14 +84,7 @@ nav {
   color: white;
 }
 
-.container {
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/112/original/image_background.jpg?1704306522);
-  height: 81vh;
-}
+
 
 /* Top left text */
 .top-left {
@@ -376,7 +378,7 @@ h3 {
 }
 
 #image-container2 {
-  background-image: url(./img/img/karsten-winegeart-b-i8TPBVslM-unsplash.jpg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/782/original/karsten-winegeart-b-i8TPBVslM-unsplash.jpg?1708983481);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
