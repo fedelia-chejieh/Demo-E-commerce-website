@@ -68,6 +68,11 @@ nav {
   cursor: pointer;
 }
 
+.menu-items li a {
+  text-decoration: none;
+  color: white;
+}
+
 .site-header {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/112/original/image_background.jpg?1704306522);
   background-attachment: fixed;
