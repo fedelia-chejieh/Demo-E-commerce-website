@@ -676,3 +676,18 @@ ul {
   text-decoration: none;
   color: black;
 }
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead {
+  display: flex;
+  justify-content: space-between;
+}

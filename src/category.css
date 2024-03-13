@@ -2,7 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #F5F7F9;
+  background-color: #f5f7f9;
 }
 
 * {
@@ -81,8 +81,8 @@ nav {
   color: #757575;
   height: auto;
   box-sizing: border-box;
-  transition: all .2s linear;
-  border: 1px solid #E2E2E2;
+  transition: all 0.2s linear;
+  border: 1px solid #e2e2e2;
   outline: none;
   font-weight: 400;
   vertical-align: baseline;
@@ -92,12 +92,12 @@ nav {
 ::-webkit-input-placeholder {
   text-align: left;
   position: relative;
-  left: -10px
+  left: -10px;
 }
 
 .product-search-btn {
   color: white;
-  background: #0184D6;
+  background: #0184d6;
   padding: 9px 8px;
   font-size: 1rem;
   cursor: pointer;
@@ -108,7 +108,7 @@ nav {
   box-shadow: none;
   outline: none;
   fill: currentColor;
-  border: 1px solid #0184D6;
+  border: 1px solid #0184d6;
   font-size: 15px;
   position: relative;
   top: 4px;
@@ -117,7 +117,7 @@ nav {
 
 .product-search-btn:hover {
   color: white;
-  background-color: #0075BE;
+  background-color: #0075be;
 }
 
 .ast-container {
@@ -142,7 +142,7 @@ nav {
   vertical-align: baseline;
 }
 
-input[type=range] {
+input[type="range"] {
   box-sizing: border-box;
   appearance: none;
   width: 200px;
@@ -177,7 +177,7 @@ input[type=range] {
     box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
 
     &::before {
-      content: ' ';
+      content: " ";
       display: block;
       position: absolute;
       top: 13px;
@@ -192,7 +192,7 @@ input[type=range] {
   position: relative;
   height: 50px;
 
-  input[type=range] {
+  input[type="range"] {
     position: absolute;
 
     &:nth-child(1) {
@@ -209,4 +209,64 @@ input[type=range] {
       }
     }
   }
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-bottom: 10px;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  background: #fff;
+}
+
+.content-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  list-style: none outside;
+  clear: both;
+}
+
+.grid-columns {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  position: relative;
+  border-bottom: 0;
+  margin: 0;
+  min-height: 1px;
+  border: 0;
+  background-color: #ffffff;
+  background-image: none;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+.site-container {
+  display: flex;
+  margin-top: 60px;
+}
+
+.secondary-container {
+  margin-left: 70px;
+}
+
+.content-area {
+  margin-left: 70px;
+  width: 67%;
 }
