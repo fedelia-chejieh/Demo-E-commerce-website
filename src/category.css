@@ -97,7 +97,7 @@ nav {
 
 .product-search-btn {
   color: white;
-  background: #0184d6;
+  background: #ffad8f;
   padding: 9px 8px;
   font-size: 1rem;
   cursor: pointer;
@@ -108,7 +108,7 @@ nav {
   box-shadow: none;
   outline: none;
   fill: currentColor;
-  border: 1px solid #0184d6;
+  border: 1px solid #ffad8f;
   font-size: 15px;
   position: relative;
   top: 4px;
@@ -117,7 +117,7 @@ nav {
 
 .product-search-btn:hover {
   color: white;
-  background-color: #0075be;
+  background-color: #ffad7f;
 }
 
 .ast-container {
