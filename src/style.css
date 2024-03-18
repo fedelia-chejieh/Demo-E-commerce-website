@@ -13,7 +13,7 @@ div {
 }
 
 nav {
-  background: rgba(163, 137, 137, 0.5);
+  background: rgba(163, 137, 137, 0.3);
   color: white;
   padding: 25px 50px;
   margin: 30;
@@ -71,7 +71,7 @@ nav {
 }
 
 .site-header {
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/109/112/original/image_background.jpg?1704306522);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/119/561/original/freestocks-7vpzXF-wHko-unsplash.jpg?1710722983);
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ nav {
 
 .logos {
   overflow: hidden;
-  padding: 35px 0;
+  padding: 38px 0;
   background: white;
   white-space: nowrap;
   position: relative;
