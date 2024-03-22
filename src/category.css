@@ -252,7 +252,7 @@ input[type="range"] {
 .content-top {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px 0 45px;
+  padding: 0 100px 0 39px;
 }
 
 #product1 .pro-container {
@@ -315,11 +315,59 @@ input[type="range"] {
 }
 
 .secondary-container {
-  margin-left: 68px;
+  margin-left: 50px;
 }
 
 .content-area {
-  margin-left: 33px;
+  margin-left: 37px;
   width: 63%;
-  padding-left: 100px;
+  padding: 66px 18px 0 65px;
+}
+
+.grid-product-parent {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+  gap: 20px;
+}
+
+.grid-product {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.orderby {
+  color: rgba(0, 0, 0, 0.5);
+  border: transparent;
+  border-radius: 0;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  box-shadow: none;
+  line-height: normal;
+  vertical-align: top;
+  background-image: url("/img/img/arrow-down-sign-to-navigate-svgrepo-com.svg");
+  background-size: 100%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.filer-results {
+  color: rgba(0, 0, 0, 0.7);
+  float: left;
+  margin-bottom: 10px;
+}
+
+.home-store,
+.home-store a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  margin-bottom: -8px;
+  font: 0.92em;
+}
+.home-store {
+  padding: 25px 43px;
 }
