@@ -338,60 +338,6 @@ hr {
   padding: 0 100px 0 39px;
 }
 
-#product1 .pro-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20px;
-}
-
-#product1 .pro {
-  width: 10%;
-  min-width: 250px;
-  padding: 10px 12px;
-  padding-right: 10px;
-  border: 0 solid #cce7d8;
-  cursor: pointer;
-  margin: 0;
-  transition: 0.2;
-}
-
-#product1 .pro img {
-  width: 100%;
-  margin-bottom: 0.8em;
-}
-
-#product1 .pro .des {
-  font-size: 1em;
-  margin-bottom: 0.5em;
-  text-align: start;
-  padding: 0;
-}
-
-#product1 .pro .des span {
-  color: #606063;
-  font-size: 12px;
-  margin-top: 0;
-}
-
-#product1 .pro .des h5 {
-  color: #1a1a1a;
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 1px;
-  margin-bottom: 6px;
-}
-
-#product1 .pro .des i {
-  font-size: 12px;
-  margin-top: 0px;
-  margin: -2px;
-}
-
-#product1 .pro .des h4 {
-  font-weight: 500;
-  margin-top: 7px;
-  margin-bottom: 3px;
-}
 .site-container {
   display: flex;
   margin-top: 65px;
