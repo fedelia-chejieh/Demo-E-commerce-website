@@ -88,7 +88,7 @@ nav {
 }
 
 .sidebar-searchInput {
-  padding: 6px 33px;
+  padding: 6px 30px;
   font-size: 1rem;
   box-shadow: none;
   border-radius: 0;
@@ -145,24 +145,43 @@ nav {
   padding-left: 20px;
   padding-right: 20px;
 }
+.price-filter {
+  margin-top: 45px;
+}
 
 .price-filter h2 {
+  margin-top: 30px;
   margin-bottom: 0.7em;
   font-size: 1.375rem;
   color: #333333;
   font-weight: 400;
   line-height: 1.5;
   border: 0;
-  margin: 0;
   outline: 0;
   padding: 0;
   vertical-align: baseline;
 }
 
+.filter-range {
+  margin-top: -12px;
+  margin-left: -2px;
+}
+
+.filter-button {
+  margin-top: 40px;
+  font-size: 0.8em;
+  padding: 8px 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  border: none;
+  background-color: #ffad8f;
+}
+
 input[type="range"] {
   box-sizing: border-box;
   appearance: none;
-  width: 200px;
+  width: 270px;
   margin: 0;
   padding: 0 0px;
   /* Add some L/R padding to ensure box shadow of handle is shown */
@@ -170,9 +189,9 @@ input[type="range"] {
   border: 0;
   border-radius: 1px;
   outline: none;
-  background: linear-gradient(grey, grey) no-repeat center;
+  background: linear-gradient(black, black) no-repeat center;
   /* Use a linear gradient to generate only the 2px height background */
-  background-size: 100% 2px;
+  background-size: 100% 3px;
   pointer-events: none;
 
   &:active,
@@ -181,17 +200,17 @@ input[type="range"] {
   }
 
   &::-webkit-slider-thumb {
-    height: 28px;
-    width: 28px;
+    height: 16px;
+    width: 16px;
     border-radius: 28px;
-    background-color: #fff;
+    background-color: black;
     position: relative;
     margin: 5px 0;
     /* Add some margin to ensure box shadow is shown */
     cursor: pointer;
     appearance: none;
     pointer-events: all;
-    box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.25);
+    box-shadow: none;
 
     &::before {
       content: " ";
@@ -228,6 +247,51 @@ input[type="range"] {
   }
 }
 
+.price {
+  margin-left: 58px;
+  font-size: 0.8751em;
+}
+
+.product-categories {
+  margin-top: 50px;
+}
+
+.product-categories h2 {
+  font-weight: 400;
+}
+
+.product-sections {
+  list-style: none;
+}
+
+.product-sections li {
+  margin-bottom: 20px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.category-items {
+  margin-left: -40px;
+}
+
+.number-item1 {
+  margin-left: 150px;
+}
+
+.number-item2 {
+  margin-left: 203px;
+}
+
+.number-item3 {
+  margin-left: 180px;
+}
+
+.our-best-sellers {
+  margin-top: 65px;
+  font-weight: lighter;
+  margin-bottom: 33px;
+}
+
 .widget-area {
   padding-right: 30px;
 }
@@ -235,13 +299,32 @@ input[type="range"] {
 .wrap {
   display: flex;
   align-items: center;
-  gap: 2%;
+  gap: 7%;
   margin-bottom: 10px;
 }
 
 .text-wrap {
   display: flex;
   flex-direction: column;
+}
+
+.product-title {
+  margin-top: -15px;
+  margin-bottom: 7px;
+}
+
+.text-wrap span {
+  margin-top: 7px;
+}
+
+.star i {
+  margin: -2px;
+}
+
+hr {
+  opacity: 0.2;
+  margin-top: 15px;
+  margin-bottom: 17px;
 }
 
 .content-area {
@@ -315,7 +398,7 @@ input[type="range"] {
 }
 
 .secondary-container {
-  margin-left: 50px;
+  margin-left: 55px;
 }
 
 .content-area {
@@ -349,10 +432,6 @@ img {
   box-shadow: none;
   line-height: normal;
   vertical-align: top;
-  background-image: url("/img/img/arrow-down-sign-to-navigate-svgrepo-com.svg");
-  background-size: 100%;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
 }
 
 .filer-results {
