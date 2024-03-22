@@ -322,7 +322,7 @@ input[type="range"] {
 }
 
 hr {
-  opacity: 0.2;
+  opacity: 0.33;
   margin-top: 15px;
   margin-bottom: 17px;
 }
@@ -449,4 +449,209 @@ img {
 }
 .home-store {
   padding: 25px 43px;
+}
+.footer {
+  background: #fff;
+  margin-top: 70px;
+}
+
+hr {
+  opacity: 0.33;
+}
+
+.site-footer-sale-text a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s linear;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.site-footer-sale-text a:hover {
+  color: #ffad8f;
+}
+
+.site-footer-sale h3 {
+  font-size: 1.625rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  font-style: inherit;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site-footer-sale {
+  padding-left: 120px;
+}
+
+figure {
+  padding-left: 10px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  text-align: left;
+}
+
+figure img {
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+  box-sizing: inherit;
+  width: 90px;
+  aspect-ratio: auto 90 / 30;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+figure h3 {
+  font-weight: 600;
+  padding-top: 42px;
+  font-size: 1.375rem;
+  line-height: 1.5em;
+}
+
+.links li {
+  line-height: 2;
+  font-weight: 300;
+}
+
+.links li a:hover {
+  color: #ffad8f;
+}
+
+.links li a {
+  transition: all 0.2s linear;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.51);
+  background-color: transparent;
+  box-sizing: inherit;
+  transition: all 0.2s linear;
+}
+
+.links li a:visited {
+  text-decoration: none;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: none;
+}
+
+.quick-link h2 {
+  padding-bottom: 18px;
+  font-weight: 400;
+  font-size: 1.375rem;
+}
+
+.subscribe h2 {
+  font-weight: 400;
+}
+
+.subscribe {
+  padding-right: 80px;
+}
+
+.email {
+  border: 1px solid #0000;
+  margin: 30px auto;
+  padding: 12px 28px;
+  color: black;
+  display: block;
+  max-width: 100%;
+  float: none;
+  font-family: inherit;
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #e2e2e2;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+  position: relative;
+  left: -15px;
+}
+
+.subsribe-btn {
+  color: white;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1em;
+  border: 1px solid #0000;
+  background: #ffad8f;
+  padding: 16px 24px;
+  box-shadow: none;
+  letter-spacing: 1px;
+  transition: all 200ms ease-in-out;
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+}
+
+.subsribe-btn:hover {
+  background-color: #fc9671;
+  color: white;
+}
+
+.copyright-socials {
+  min-height: 80px;
+  border-style: solid;
+  border-width: 0px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-socials p {
+  font-size: 15px;
+  color: #333333;
+  font-weight: 300;
+}
+
+.site-footer-icons i {
+  margin: 0 12px;
+}
+
+.site-footer-icons i:hover {
+  color: #ffad8f;
+}
+
+.site-footer-icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead {
+  display: flex;
+  justify-content: space-between;
 }
