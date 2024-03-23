@@ -108,12 +108,20 @@ nav {
   transition: all 200ms ease-in-out;
 }
 
-.Price-currencySymbol:hover,
 .about:hover,
-.contact:hover,
-.shopping-bag-icon:hover {
+.contact:hover {
   color: #ffad8f;
 }
+
+.navItemIcon .duo {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.navItemIcon .duo:hover {
+  color: #ffad8f;
+}
+
 .site-content {
   padding-top: 30px;
 }
@@ -207,6 +215,12 @@ nav {
   color: #fff;
   border: none;
   background-color: #ffad8f;
+  cursor: pointer;
+}
+
+.filter-button:hover {
+  background-color: #ffad7f;
+  color: #fff;
 }
 
 input[type="range"] {
@@ -332,11 +346,13 @@ input[type="range"] {
   align-items: center;
   gap: 7%;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .text-wrap {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .product-title {
@@ -397,6 +413,7 @@ hr {
 
 img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .orderby {
@@ -436,6 +453,7 @@ img {
   font-size: 16px;
   font-weight: 600;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .des span {
