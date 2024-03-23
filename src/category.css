@@ -32,9 +32,16 @@ nav {
   top: 2px;
 }
 
-.navItems {
+.navItems .contact {
   position: relative;
-  left: 100px;
+  left: 150px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navItems .about {
+  position: relative;
+  left: 135px;
   font-size: 13px;
   cursor: pointer;
 }
@@ -50,13 +57,23 @@ nav {
   height: 70;
   width: 150;
 }
+.navItemIcon .Price-currencySymbol {
+  left: 20px;
+}
 
 .contact {
   margin: 9px;
   cursor: pointer;
 }
 
-.DNK {
+.shopping-bag-icon {
+  cursor: pointer;
+  position: relative;
+  left: 5px;
+  margin: 5px;
+}
+
+.user-icon {
   cursor: pointer;
   position: relative;
   left: 15px;
@@ -77,12 +94,26 @@ nav {
   font-size: 15px;
   color: black;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 .menu-items li:hover {
   color: #ffad8f;
 }
 
+.Price-currencySymbol,
+.about,
+.contact,
+.shopping-bag-icon {
+  transition: all 200ms ease-in-out;
+}
+
+.Price-currencySymbol:hover,
+.about:hover,
+.contact:hover,
+.shopping-bag-icon:hover {
+  color: #ffad8f;
+}
 .site-content {
   padding-top: 30px;
 }
