@@ -519,6 +519,12 @@ img {
   cursor: inherit;
 }
 
+#pagination1 {
+  color: white;
+  background: black;
+  cursor: inherit;
+}
+
 .footer {
   background: #fff;
   margin-top: 70px;
