@@ -513,6 +513,12 @@ img {
   white-space: nowrap;
 }
 
+#pagination2 {
+  color: white;
+  background: black;
+  cursor: inherit;
+}
+
 .footer {
   background: #fff;
   margin-top: 70px;
