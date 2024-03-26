@@ -515,13 +515,9 @@ img {
   white-space: nowrap;
 }
 
-#pagination2 {
-  color: white;
-  background: black;
-  cursor: inherit;
-}
-
-#pagination1 {
+#pagination2,
+#pagination1,
+#pagination3 {
   color: white;
   background: black;
   cursor: inherit;
