@@ -1,0 +1,168 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f7f9;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin: 0 0 0.5em 0;
+  line-height: 1.2;
+  padding: 0;
+  font-size: 1.875rem;
+  font-weight: normal;
+}
+
+div {
+  display: block;
+}
+
+nav {
+  background: white;
+  color: black;
+  padding: 25px 50px;
+  margin: 30;
+}
+
+p {
+  margin-bottom: 1em;
+  width: 30em;
+  overflow-wrap: break-word;
+  font-size: 18;
+  line-height: 1.5;
+}
+
+hr {
+  opacity: 0.33;
+  margin-top: 15px;
+  margin-bottom: 17px;
+  width: 70%;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 2px;
+}
+
+.navItems .contact {
+  position: relative;
+  left: 150px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.navItems .about {
+  position: relative;
+  left: 135px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+  position: relative;
+  left: -14px;
+}
+
+.navItemIcon {
+  height: 70;
+  width: 150;
+}
+.navItemIcon .Price-currencySymbol {
+  left: 20px;
+}
+
+.contact {
+  margin: 9px;
+  cursor: pointer;
+}
+
+.shopping-bag-icon {
+  cursor: pointer;
+  position: relative;
+  left: 5px;
+  margin: 5px;
+}
+
+.user-icon {
+  cursor: pointer;
+  position: relative;
+  left: 15px;
+  margin: 5px;
+}
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li {
+  position: relative;
+  left: -215px;
+  display: inline;
+  margin: 0 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-items li:hover {
+  color: #ffad8f;
+}
+
+.Price-currencySymbol,
+.about,
+.contact,
+.shopping-bag-icon {
+  transition: all 200ms ease-in-out;
+}
+
+.about:hover,
+.contact:hover {
+  color: #ffad8f;
+}
+
+.navItemIcon .duo {
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.navItemIcon .duo:hover {
+  color: #ffad8f;
+}
+
+.product-summary {
+  zoom: 1;
+  margin: 0 0 1em;
+  padding: 0;
+  font-size: 0.92em;
+  color: #777;
+}
+
+.price {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.2em;
+  display: inline-block;
+}
+
+.free-shipping {
+  display: inline;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.screen-reader-text {
+  display: none;
+}
