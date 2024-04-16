@@ -376,6 +376,10 @@ h3 {
   font-weight: 500;
 }
 
+#product1 .pro .des a {
+  text-decoration: none;
+}
+
 #image-container2 {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/782/original/karsten-winegeart-b-i8TPBVslM-unsplash.jpg?1708983481);
   background-attachment: fixed;

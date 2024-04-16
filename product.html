@@ -18,6 +18,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <script
       src="https://kit.fontawesome.com/7d9e9e11d0.js"
       crossorigin="anonymous"
@@ -60,74 +61,101 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <div class="col-6"></div>
-        <div class="col-6">
-          <div class="product-summary">
-            <a href="Index.html">Home</a>&nbsp;/&nbsp;<a href="men">Men</a
-            >&nbsp;/&nbsp;DNK Yellow Shoes
-          </div>
-          <span><a href="men">Men</a></span>
-          <h1 class="product-title-entry">DNK Yellow Shoes</h1>
-          <p class="price">
-            <del aria-hidden="true"><span>$150.00</span></del
-            ><span>$120.00</span
-            ><span class="free-shipping"> + Free Shipping</span>
-          </p>
 
-          <div class="product-details">
-            <p>
-              Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
-              mauris vitae erat consequat auctor eu in elit. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus
-              condimentum sit amet a augue. Sed non neque elit sed.
-            </p>
+    <div class="container">
+      <div class="product-info">
+        <div class="row">
+          <div class="col-6">
+            <img src="img/img/sports-shoe3-600x600.jpeg" class="img-fluid" />
           </div>
-          <form
-            class="cart"
-            action="men"
-            method="post"
-            enctype="multipart/form-data"
-          >
-            <div class="quantity">
-              <label class="screen-reader-text" for="quantity_6613c876c7247"
-                >DNK Yellow Shoes quantity</label
-              >
-              <input
-                type="number"
-                id="quantity_6613c876c7247"
-                class="input-text qty text"
-                name="quantity"
-                value="1"
-                aria-label="Product quantity"
-                size="4"
-                min="1"
-                max=""
-                step="1"
-                placeholder=""
-                inputmode="numeric"
-                autocomplete="off"
-              />
+          <div class="col-6 pl-5">
+            <div class="product-summary">
+              <a href="Index.html">Home</a>&nbsp;/&nbsp;<a href="men">Men</a
+              >&nbsp;/&nbsp;DNK Yellow Shoes
             </div>
-            <button
-              type="submit"
-              name="add-to-cart"
-              value="362"
-              class="single_add_to_cart_button button alt"
+            <span class="link"><a href="men">Men</a></span>
+            <h1 class="product-title-entry">DNK Yellow Shoes</h1>
+            <p class="price">
+              <del aria-hidden="true" class="price-cross"
+                ><span>$150.00</span></del
+              ><span>$120.00</span
+              ><span class="free-shipping"> + Free Shipping</span>
+            </p>
+
+            <div class="product-details">
+              <p>
+                Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                mauris vitae erat consequat auctor eu in elit. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu
+                felis dapibus condimentum sit amet a augue. Sed non neque elit
+                sed.
+              </p>
+            </div>
+            <form
+              class="cart"
+              action="men"
+              method="post"
+              enctype="multipart/form-data"
             >
-              Add to cart
-            </button>
-            <input type="hidden" name="customize" value="template" />
-          </form>
-          <div class="product_meta">
-            <span class="posted_in"
-              >Category: <a href="men" rel="tag">Men</a></span
-            >
-            <hr />
+              <div class="quantity">
+                <label class="screen-reader-text" for="quantity_6613c876c7247"
+                  >DNK Yellow Shoes quantity</label
+                >
+                <input
+                  type="number"
+                  id="quantity_6613c876c7247"
+                  class="input-text qty text"
+                  name="quantity"
+                  value="1"
+                  aria-label="Product quantity"
+                  size="4"
+                  min="1"
+                  max=""
+                  step="1"
+                  placeholder=""
+                  inputmode="numeric"
+                  autocomplete="off"
+                />
+              </div>
+              <button
+                type="submit"
+                name="add-to-cart"
+                value="362"
+                class="single_add_to_cart_button button alt"
+              >
+                Add to cart
+              </button>
+              <input type="hidden" name="customize" value="template" />
+            </form>
+            <div class="product_meta">
+              <hr />
+              <span class="posted_in"
+                >Category: <a href="men" rel="tag">Men</a></span
+              >
+            </div>
           </div>
         </div>
+      </div>
+      <div class="tabs-wrapper">
+        <ul class="tabs" role="tablist">
+          <li
+            class="description_tab active"
+            id="tab-title-description"
+            role="tab"
+            aria-controls="tab-title-description"
+          >
+            <a href="#tab-description">Description</a>
+          </li>
+          <li
+            class="reviews_tab"
+            title="tab-title-reviews"
+            role="tab"
+            aria-controls="tab-reviews"
+          >
+            <a href="#tab-reviews"> Reviews (0) </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
