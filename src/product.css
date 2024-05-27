@@ -222,77 +222,16 @@ hr {
   margin: 0 1em 1em 0;
 }
 
-.tabs-wrapper .tabs {
-  zoom: 1;
+[role="tablist"] {
   list-style: none;
-  margin: 0 0 1em;
-  overflow: hidden;
-  position: relative;
-  margin-top: 40px;
-  margin-left: 14px;
-}
-
-.description_tab,
-.active,
-.reviews_tab {
-  display: inline-block;
-  z-index: 2;
-  border-bottom-color: #fff;
-  border: 0;
-  background: 0 0;
-  position: relative;
-  margin: 0 1em 0 0;
+  margin: 0;
   padding: 0;
-  border-radius: 0;
+  display: flex;
+  gap: 1rem;
 }
 
-.description_tab a,
-.reviews_tab a {
-  display: inline-block;
-  padding: 0.5em 0;
-  font-weight: 700;
-  color: #515151;
-  text-decoration: none;
-}
-
-li .active a {
-  text-shadow: inherit;
-}
-
-.tabs-wrapper .tabs::before {
-  content: " ";
-  display: table;
-  border: 0;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 30px;
-  z-index: 1;
-  height: 1px;
-  background-color: #e2e2e2;
-  top: 0;
-}
-
-.tabs .reviews_tab::before {
-  content: " ";
-  position: absolute;
-  bottom: -1px;
-  width: 5px;
-  height: 5px;
-  border: none;
-  box-shadow: none;
-}
-
-li.active::before {
-  background: #000000;
-  content: " ";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  box-shadow: none;
-  top: 0;
-  left: 0;
-  border-radius: 0;
-  border: none;
-  bottom: -1px;
+[aria-selected="true"] {
+  text-decoration-thickness: 0.25em;
+  text-underline-offset: 0.5em;
+  color: black;
 }

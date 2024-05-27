@@ -137,26 +137,130 @@
           </div>
         </div>
       </div>
-      <div class="tabs-wrapper">
-        <ul class="tabs" role="tablist">
-          <li
-            class="description_tab active"
-            id="tab-title-description"
-            role="tab"
-            aria-controls="tab-title-description"
-          >
-            <a href="#tab-description">Description</a>
+      <div class="tabs-container">
+        <ul aria-labelledby="tabs-title" class="tab-wrapper">
+          <li class="tab">
+            <a id="tab-1" href="#description" class="tab-link"> Description </a>
           </li>
-          <li
-            class="reviews_tab"
-            title="tab-title-reviews"
-            role="tab"
-            aria-controls="tab-reviews"
-          >
-            <a href="#tab-reviews"> Reviews (0) </a>
+          <li class="tab">
+            <a id="tab-2" href="#reviews" class="tab-link"> Reviews (0) </a>
           </li>
         </ul>
+        <div class="tabs__panels flow">
+          <div id="description" aria-labelledby="tab-1">
+            <p>
+              A marketing company can use targeted advertising to reach specific
+              audiences based on demographics, interests, and behaviors. This
+              can increase the effectiveness of advertising campaigns and
+              improve return on investment.
+            </p>
+          </div>
+          <div id="reviews" aria-labelledby="tab-2">
+            <p>
+              A marketing company can leverage social media platforms to engage
+              with customers and promote products or services. Social media can
+              also be used to gather customer feedback and insights to inform
+              future marketing strategies.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <script>
+      const tabsContainer = document.querySelector(".tabs-container");
+      const tabsList = tabsContainer.querySelector(".tab-wrapper");
+      const tabButtons = tabsList.querySelectorAll(".tab-link");
+      const tabPanels = tabsContainer.querySelectorAll(".tabs_pnels > div");
+
+      tabsList.setAttribute("role", "tablist");
+
+      tabsList.querySelectorAll("li").forEach((listitem) => {
+        listitem.setAttribute("role", "presentation");
+      });
+
+      tabButtons.forEach((tab, index) => {
+        tab.setAttribute("role", "tab");
+        if (index === 0) {
+          tab.setAttribute("aria-selected", "true");
+        } else {
+          tab.setAttribute("tabindex", "-1");
+          tabPanels[index].setAttribute("hidden", "");
+        }
+      });
+
+      tabPanels.forEach((panel) => {
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("tabindex", "0");
+      });
+
+      tabsContainer.addEventListener("click", (e) => {
+        const clickedTab = e.target.closest("a");
+        if (!clickedTab) return;
+        e.preventDefault();
+
+        switchTab(clickedTab);
+      });
+
+      tabsContainer.addEventListener("keydown", (e) => {
+        switch (e.key) {
+          case "ArrowLeft":
+            moveLeft();
+            break;
+          case "ArrowRight":
+            moveRight();
+            break;
+          case "Home":
+            e.preventDefault();
+            switchTab(tabButtons[0]);
+            break;
+          case "End":
+            e.preventDefault();
+            switchTab(tabButtons[tabButtons.length - 1]);
+            break;
+        }
+      });
+
+      function moveLeft() {
+        const currentTab = document.activeElement;
+        if (!currentTab.parentElement.previousElementSibling) {
+          switchTab(tabButtons[tabButtons.length - 1]);
+        } else {
+          switchTab(
+            currentTab.parentElement.previousElementSibling.querySelector("a")
+          );
+        }
+      }
+
+      function moveRight() {
+        const currentTab = document.activeElement;
+        if (!currentTab.parentElement.nextElementSibling) {
+          switchTab(tabButtons[0]);
+        } else {
+          switchTab(
+            currentTab.parentElement.nextElementSibling.querySelector("a")
+          );
+        }
+      }
+
+      function switchTab(newTab) {
+        const activePanelId = newTab.getAttribute("href");
+        const activePanel = tabsContainer.querySelector(activePanelId);
+
+        tabButtons.forEach((button) => {
+          button.setAttribute("aria-selected", false);
+          button.setAttribute("tabindex", "-1");
+        });
+
+        tabPanels.forEach((panel) => {
+          panel.setAttribute("hidden", true);
+        });
+
+        activePanel.removeAttribute("hidden", false);
+
+        newTab.setAttribute("aria-selected", true);
+        newTab.setAttribute("tabindex", "0");
+        newTab.focus();
+      }
+    </script>
   </body>
 </html>
