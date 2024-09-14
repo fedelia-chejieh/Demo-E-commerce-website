@@ -137,130 +137,37 @@
           </div>
         </div>
       </div>
-      <div class="tabs-container">
-        <ul aria-labelledby="tabs-title" class="tab-wrapper">
-          <li class="tab">
-            <a id="tab-1" href="#description" class="tab-link"> Description </a>
-          </li>
-          <li class="tab">
-            <a id="tab-2" href="#reviews" class="tab-link"> Reviews (0) </a>
-          </li>
-        </ul>
-        <div class="tabs__panels flow">
-          <div id="description" aria-labelledby="tab-1">
-            <p>
-              A marketing company can use targeted advertising to reach specific
-              audiences based on demographics, interests, and behaviors. This
-              can increase the effectiveness of advertising campaigns and
-              improve return on investment.
-            </p>
-          </div>
-          <div id="reviews" aria-labelledby="tab-2">
-            <p>
-              A marketing company can leverage social media platforms to engage
-              with customers and promote products or services. Social media can
-              also be used to gather customer feedback and insights to inform
-              future marketing strategies.
-            </p>
-          </div>
+      <div class="tabs">
+        <input
+          type="radio"
+          class="tabs__radio"
+          name="tabs-example"
+          id="tab1"
+          checked
+        />
+        <label for="tab1" class="tabs__label">Description</label>
+        <div class="tabs__content">
+          <h3>Product description</h3>
+          <p>
+            Since it’s creation lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident.
+          </p>
         </div>
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab2" />
+        <label for="tab2" class="tabs__label">Review</label>
+        <div class="tabs__content">There are no reviews yet.</div>
       </div>
     </div>
-    <script>
-      const tabsContainer = document.querySelector(".tabs-container");
-      const tabsList = tabsContainer.querySelector(".tab-wrapper");
-      const tabButtons = tabsList.querySelectorAll(".tab-link");
-      const tabPanels = tabsContainer.querySelectorAll(".tabs_pnels > div");
-
-      tabsList.setAttribute("role", "tablist");
-
-      tabsList.querySelectorAll("li").forEach((listitem) => {
-        listitem.setAttribute("role", "presentation");
-      });
-
-      tabButtons.forEach((tab, index) => {
-        tab.setAttribute("role", "tab");
-        if (index === 0) {
-          tab.setAttribute("aria-selected", "true");
-        } else {
-          tab.setAttribute("tabindex", "-1");
-          tabPanels[index].setAttribute("hidden", "");
-        }
-      });
-
-      tabPanels.forEach((panel) => {
-        panel.setAttribute("role", "tabpanel");
-        panel.setAttribute("tabindex", "0");
-      });
-
-      tabsContainer.addEventListener("click", (e) => {
-        const clickedTab = e.target.closest("a");
-        if (!clickedTab) return;
-        e.preventDefault();
-
-        switchTab(clickedTab);
-      });
-
-      tabsContainer.addEventListener("keydown", (e) => {
-        switch (e.key) {
-          case "ArrowLeft":
-            moveLeft();
-            break;
-          case "ArrowRight":
-            moveRight();
-            break;
-          case "Home":
-            e.preventDefault();
-            switchTab(tabButtons[0]);
-            break;
-          case "End":
-            e.preventDefault();
-            switchTab(tabButtons[tabButtons.length - 1]);
-            break;
-        }
-      });
-
-      function moveLeft() {
-        const currentTab = document.activeElement;
-        if (!currentTab.parentElement.previousElementSibling) {
-          switchTab(tabButtons[tabButtons.length - 1]);
-        } else {
-          switchTab(
-            currentTab.parentElement.previousElementSibling.querySelector("a")
-          );
-        }
-      }
-
-      function moveRight() {
-        const currentTab = document.activeElement;
-        if (!currentTab.parentElement.nextElementSibling) {
-          switchTab(tabButtons[0]);
-        } else {
-          switchTab(
-            currentTab.parentElement.nextElementSibling.querySelector("a")
-          );
-        }
-      }
-
-      function switchTab(newTab) {
-        const activePanelId = newTab.getAttribute("href");
-        const activePanel = tabsContainer.querySelector(activePanelId);
-
-        tabButtons.forEach((button) => {
-          button.setAttribute("aria-selected", false);
-          button.setAttribute("tabindex", "-1");
-        });
-
-        tabPanels.forEach((panel) => {
-          panel.setAttribute("hidden", true);
-        });
-
-        activePanel.removeAttribute("hidden", false);
-
-        newTab.setAttribute("aria-selected", true);
-        newTab.setAttribute("tabindex", "0");
-        newTab.focus();
-      }
-    </script>
   </body>
 </html>
